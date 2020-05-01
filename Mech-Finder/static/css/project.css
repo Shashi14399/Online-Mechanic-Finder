@@ -1,0 +1,41 @@
+#countDown{ 
+	text-align: center; 
+	background: #f9fbff; 
+font-family: sans-serif; 
+font-weight: 100; 
+} 
+#header{ 
+color: #396; 
+font-weight: 100; 
+font-size: 40px; 
+margin: 40px 0px 20px; 
+} 
+#clockdiv{ 
+	font-family: sans-serif; 
+	color: #fff; 
+	display: inline-block; 
+	font-weight: 100; 
+	text-align: center; 
+	font-size: 30px; 
+} 
+#clockdiv > div{ 
+	padding: 10px; 
+	border-radius: 3px; 
+	background: #00BF96; 
+	display: inline-block; 
+} 
+#clockdiv div > span{ 
+	padding: 15px; 
+	border-radius: 3px; 
+	background: #00816A; 
+	display: inline-block; 
+} 
+smalltext{ 
+	padding-top: 5px; 
+	font-size: 16px; 
+} 
+#product_image{
+  height: 500px;
+  margin-right: 200px;
+  margin-left: 200px;
+}

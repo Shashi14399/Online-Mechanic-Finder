@@ -1,0 +1,104 @@
+<html>
+{% include 'header.html' %}
+<head>
+  <title>Mechanic Sign Up</title>
+  
+  <link rel="stylesheet" type="text/css" href="static/css/suggest.css"></link>
+</head>
+
+<body style="background-color: #f9fbff;">
+  <br><br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-lg-9">
+        <div class="card">
+          <div class="card-header">
+            Mechanic Sign Up
+          </div>
+          <div class="card-body">
+            <form method="post" action="/sign_mech" autocomplete="off">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label >Name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label >Email</label>
+                  <input type="email" name="email" class="form-control"  placeholder="Email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label >Username</label>
+                  <input type="text" name="uname" class="form-control" placeholder="Username">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Password</label>
+                  <input type="password" name="pass1" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group col-md-4">
+                  <label >Confirm Password</label>
+                  <input type="password" name="pass2" class="form-control" placeholder="Confirm Password">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label >Age</label>
+                  <input type="number" name="age" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label >Phone Number</label>
+                  <input type="tel" name="phno" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label >Photo</label>
+                  <input type="file" name="img" class="form-control" accept="image/*">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label >Location</label>
+                  <input type="text" id="autocomplete" class="form-control" name="location" size="30"  ></input>
+                  <!--<select class="form-control" name="location">
+                  <option value="1">Jayanagar</option>
+                  <option value="2">Rajajinagar</option>
+                  <option value="3">Basaveshwarnangar</option>
+                  <option value="4">Yelahanka</option>
+                  <option value="5">Banashankari</option>
+                  <option value="6">Kormangala</option>
+                  <option value="7">Whitefiled</option>
+                  <option value="8">Bannerghatta</option>
+                  <option value="9">Malleshwaram</option>
+                  <option value="10">Hebbal</option>
+                </select>-->
+                </div>
+                <div class="form-group col-md-4">
+                  <label >Specification</label>
+                  <select class="form-control" name="spec">
+                    <option value="Car">Car</option>
+                    <option value="Scooter">Scooter</option>
+                    <option value="Bicycle">Bicycle</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="static/js/suggest.js"></script>
+
+  <footer class="footer" style="background-color: #116466;">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index"> Mechcall.com</a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

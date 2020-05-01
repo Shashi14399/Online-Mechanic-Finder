@@ -1,0 +1,76 @@
+<html>
+{% include 'header.html' %}
+<head>
+  <title>Request For Car Mechanic</title>
+  
+</head>
+
+<body style="background-color: #f9fbff;">
+  <br><br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-lg-9">
+        <div class="card">
+          <div class="card-header">
+            Request For Car Mechanic
+          </div>
+		  <br><button onclick="getLocation()" class="btn btn-primary">Get My Location</button>
+          <div class="card-body">
+            <form method="post" action="/requests_car">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label >User name</label>
+                  <input type="text" name="username" class="form-control" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label >Problem</label>
+					<select id="problem" name="problem" class="form-control">
+					<option value="tyre">Flat Tyre</option>
+					<option value="fuel">Out of fuel</option>
+					<option value="engine">Engine Problem</option>
+					<option value="lights">Head Lights Are out</option>
+				  </select>
+                </div>
+                <div class="form-group col-md-8">
+                  <label >Any other suggestions</label>
+                  <input type="text" name="sugg" class="form-control">
+                </div>
+              </div>
+			  <input type="hidden" id="lati" name="lat" value="latitude"/>
+			  <input type="hidden" id="longi" name="long" value="longitude"/>
+              <button type="submit" name="signup" value="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <footer class="footer" style="background-color: #116466;">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index"> Mechcall.com</a>
+    </div>
+  </footer>
+<script>
+
+	function getLocation() {
+	  if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(showPosition);
+	  }
+	}
+
+	function showPosition(position) {
+	  var h1 = document.getElementById("lati");
+	  var h2 = document.getElementById("longi");
+	  h1.value = position.coords.latitude;
+	  h2.value = position.coords.longitude;
+	}
+</script>
+
+</body>
+
+</html>

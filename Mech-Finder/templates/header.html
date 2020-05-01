@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap-grid.min.css') }}">
+
+
+
+  <style>
+.dropbtn {
+  background-color: #116466;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.navbtn {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.navbtn:hover .dropdown-content {display: block;}
+
+.navbtn:hover .dropbtn {background-color: #D1E8E2;}
+</style>
+
+
+  
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #116466;">
+
+    <a class="navbar-brand" href="index">MechCall</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <div class="navbtn">
+          <button class="dropbtn" onclick="window.location.href = 'index';">Home</button>
+        </div>
+        </li>
+        <li class="nav-item">
+          <div class="navbtn">
+            <button class="dropbtn" onclick="window.location.href = 'pricing';">Pricing</button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="navbtn">
+            <button class="dropbtn" onclick="window.location.href = 'cust_request_types';">Services</button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="navbtn">
+            <button class="dropbtn" onclick="window.location.href = 'about';">About us</button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="navbtn">
+          <button class="dropbtn" onclick="window.location.href = 'log_cust_page';">Login</button>
+      </div>
+      <div class="navbtn">
+          <button class="dropbtn">Sign Up</button>
+            <div class="dropdown-content">
+                <a href="sign_cust_page">Customer</a>
+                <a href="sign_mech_page">Mechanic</a>
+            </div>
+      </div>
+      <div class="navbtn">
+          <button class="dropbtn" onclick="window.location.href = 'logout';">Logout</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="static/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

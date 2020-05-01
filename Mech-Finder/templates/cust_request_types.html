@@ -1,0 +1,75 @@
+<html lang="en">
+
+{% include 'header.html' %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index_css.css') }}">
+
+}
+</head>
+
+<body style="background-color: #f9fbff;">
+  <!-- Navigation -->
+
+
+  <header>
+  	<br>
+  	<br>
+  	<br>
+  	<div class="container">
+  		<h1 class="page-header">Welcome, {{ name }}</h1>
+	  
+	  <div class="card-deck">
+		  <div class="card" style="max-width: 18rem;">
+		    <img class="card-img-top" src="static/assets/car1.jpg" alt="Card image" style="width:100%">
+		    <div class="card-body">
+		      <h4 class="card-title">Car Repair</h4>
+		      <p class="card-text">For cost details please check the pricing tab</p>
+		      <a href="req_car_mech" class="btn btn-primary">Add Request</a>
+		    </div>
+		  </div>
+		  
+		  <div class="card" style="max-width: 18rem;">
+		    <img class="card-img-top" src="static/assets/scooter.jpg" alt="Card image" style="width:100%">
+		    <div class="card-body">
+		      <h4 class="card-title">Scooter Repair</h4>
+		      <p class="card-text">For cost details please check the pricing tab</p>
+		      <a href="req_scooter_mech" class="btn btn-primary">Add Request</a>
+		    </div>
+		  </div>
+
+		  <div class="card" style="max-width: 18rem;">
+		    <img class="card-img-top" src="static/assets/bicycle.jpg" alt="Card image" style="width:100%">
+		    <div class="card-body">
+		      <h4 class="card-title">Bicycle Repair</h4>
+		      <p class="card-text">For cost details please check the pricing tab</p>
+		      <a href="req_bicycle_mech" class="btn btn-primary">Add Request</a>
+		    </div>
+		  </div>
+
+	</div>
+  </header>
+
+  <footer class="footer" style="background-color: #116466;">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index"> Mechcall.com</a>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!--  Always Download latest version of Boostrap and add here-->
+  <script src="static/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>

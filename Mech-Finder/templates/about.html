@@ -1,0 +1,37 @@
+{% include 'header.html' %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap-grid.min.css') }}">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!--  Always Download latest version of Boostrap and add here-->
+  <script src="static/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #f9fbff;">
+
+  <div class="jumbotron jumbotron-fluid" style="background-color: #f9fbff;">
+    <div class="container">
+      <br>
+      <h1 class="display-4">About Us</h1>
+      <br>
+      <p class="lead">This is an online mechanic finding website created as part of the project for the WebTech-II course of 2019-20 by Srivatsa Vantmuri, Saransh Gupta and Shashidhar R. We have tried to implement the basic functionality of a mechanic finding website in which the customers can request a mechanic at their location and aspiring mechanics can find a job. The front-end uses different CSS and Bootstrap styling features to make the website more appealing and also integrates javascript to propagate this.The backend uses MYSql database to store appropriate information that the webpage requires, this data is accessed with the help of FLASK which excecutes them on the server side and thus integrating all the HTML functionality with that of CSS and JS to produce a website capable of implementing some of the features of a mechanic finding website on a smaller scale. </p>
+    </div>
+  </div>
+  <br><br>
+
+
+  <footer class="footer" style="background-color: #116466;">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index"> Mechcall.com</a>
+    </div>
+  </footer>
+
+</body>

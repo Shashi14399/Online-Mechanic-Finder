@@ -1,0 +1,80 @@
+<html lang="en">
+
+{% include 'header.html' %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.2.1-dist/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index_css.css') }}">
+</head>
+
+<body style="background-color: #f9fbff;">
+  <!-- Navigation -->
+
+
+  <header>
+    <br>
+    <br>
+    <br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image:url(static/assets/yourmechanic.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">We provide the best mechanics anywhere anytime</h2>
+            <a href="cust_request_types" class="btn btn-outline-success" style="color: white;" >Request for mechanic</a>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(static/assets/reliableautomechanic.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">For aspiring mechanics</h2>
+            <a href="sign_mech_page" class="btn btn-outline-success" style="color: white;" >Register as a mechanic</a>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(static/assets/payment1.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">We provide the best service</h2>
+            <p class="lead">Lowest prices</p>
+            <p class="lead">Trusted mechanics</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <footer class="footer" style="background-color: #116466;">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index"> Mechcall.com</a>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!--  Always Download latest version of Boostrap and add here-->
+  <script src="static/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
